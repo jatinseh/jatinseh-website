@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -13,10 +13,14 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className="text-3xl font-bold underline">Build is in progress! Hang on </h1>
-        <h2 className="">Till then check out my 
-          <Link href={"https://twitter.com/iJatinSeh"}>Twitter</Link>
-        </h2>
+        <h1 className="text-3xl font-bold underline">
+          Build is in progress! Hang on{" "}
+        </h1>
+        <h2>Till then check out my</h2>
+        <Link className="underline" href={"https://twitter.com/iJatinSeh"}>
+          {" "}
+          Twitter
+        </Link>
       </main>
 
       <footer className={styles.footer}>
