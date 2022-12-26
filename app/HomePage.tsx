@@ -1,9 +1,12 @@
+"use client";
+
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import Navbar from "../components/Navbar";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,6 +15,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Navbar />
+      <div className="container mx-auto px-4 py-16">
+        Amazing content
+        {/* Your content goes here */}
+      </div>
       <main className={styles.main}>
         <h1 className="text-3xl font-bold underline">
           Build is in progress! Hang on{" "}
