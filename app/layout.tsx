@@ -1,15 +1,16 @@
-import "../styles/globals.css";
-import { AnalyticsWrapper } from "./components/analytics";
+import "./global.css";
+import { Inter } from "@next/font/google";
+import { AnalyticsWrapper } from "../components/analytics";
+
+const inter = Inter({ variable: "--font-inter" });
 
 export default function RootLayout({
-  // Layouts must accept a children prop.
-  // This will be populated with nested layouts or pages
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <body>{children}</body>
       <AnalyticsWrapper />
     </html>
